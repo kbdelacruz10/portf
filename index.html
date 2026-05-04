@@ -1,117 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
 
   <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header class="nav">
-  <div class="logo">TG</div>
+  <header class="nav">
+    <div class="logo">TG</div>
 
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#contact" class="btn-outline">CONTACT</a></li>
-  </ul>
-</header>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact" class="btn-outline">CONTACT</a></li>
+    </ul>
+  </header>
 
-<!-- HERO -->
-<section class="hero">
+  <!-- HERO -->
+  <section class="hero">
 
-  <div class="hero-left">
-    <p class="fade-up">Hi, I am</p>
-    <h1 class="fade-up delay-1">Tomasz Gajda</h1>
-    <span class="fade-up delay-2">Frontend Developer / UI Designer</span>
+    <div class="hero-left">
+      <p class="fade-up">Hi, I am</p>
+      <h1 class="fade-up delay-1">Tomasz Gajda</h1>
+      <span class="fade-up delay-2">Frontend Developer / UI Designer</span>
 
-    <div class="socials fade-up delay-3">
-      <div>GH</div>
-      <div>IN</div>
-      <div>LI</div>
+      <div class="socials fade-up delay-3">
+        <div>GH</div>
+        <div>IN</div>
+        <div>LI</div>
+      </div>
     </div>
-  </div>
 
-  <div class="hero-right">
-    <img src="assets/profile.png" class="fade-in"/>
-  </div>
-
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="about reveal">
-  <h2>ABOUT ME</h2>
-  <p class="about-text">
-    Passionate developer focused on clean UI and performant web apps.
-  </p>
-
-  <div class="about-grid">
-    <div>
-      <h3>DESIGN</h3>
-      <p>UI/UX, Figma, branding</p>
+    <div class="hero-right">
+      <img src="assets/profile.png" class="fade-in" />
     </div>
-    <div>
-      <h3>DEVELOPMENT</h3>
-      <p>Modern frontend apps</p>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about reveal">
+    <h2>ABOUT ME</h2>
+    <p class="about-text">
+      Passionate developer focused on clean UI and performant web apps.
+    </p>
+
+    <div class="about-grid">
+      <div>
+        <h3>DESIGN</h3>
+        <p>UI/UX, Figma, branding</p>
+      </div>
+      <div>
+        <h3>DEVELOPMENT</h3>
+        <p>Modern frontend apps</p>
+      </div>
+      <div>
+        <h3>MAINTENANCE</h3>
+        <p>Optimization & scaling</p>
+      </div>
     </div>
-    <div>
-      <h3>MAINTENANCE</h3>
-      <p>Optimization & scaling</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills reveal">
+    <h2>SKILLS</h2>
+
+    <div class="skill-grid">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JS</div>
+      <div>React</div>
+      <div>Git</div>
+      <div>Figma</div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SKILLS -->
-<section id="skills" class="skills reveal">
-  <h2>SKILLS</h2>
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <h2 class="reveal">PORTFOLIO</h2>
 
-  <div class="skill-grid">
-    <div>HTML</div>
-    <div>CSS</div>
-    <div>JS</div>
-    <div>React</div>
-    <div>Git</div>
-    <div>Figma</div>
-  </div>
-</section>
+    <div class="gallery">
+      <div class="card"><img src="assets/p1.jpg"></div>
+      <div class="card"><img src="assets/p2.jpg"></div>
+      <div class="card"><img src="assets/p3.jpg"></div>
+      <div class="card"><img src="assets/p4.jpg"></div>
+      <div class="card"><img src="assets/p1.jpg"></div>
+      <div class="card"><img src="assets/p2.jpg"></div>
+    </div>
+  </section>
 
-<!-- PORTFOLIO -->
-<section id="portfolio" class="portfolio">
-  <h2 class="reveal">PORTFOLIO</h2>
+  <!-- CONTACT -->
+  <section id="contact" class="contact reveal">
+    <h2>CONTACT</h2>
 
-  <div class="gallery">
-    <div class="card"><img src="assets/p1.jpg"></div>
-    <div class="card"><img src="assets/p2.jpg"></div>
-    <div class="card"><img src="assets/p3.jpg"></div>
-    <div class="card"><img src="assets/p4.jpg"></div>
-    <div class="card"><img src="assets/p1.jpg"></div>
-    <div class="card"><img src="assets/p2.jpg"></div>
-  </div>
-</section>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact reveal">
-  <h2>CONTACT</h2>
+  <footer>
+    <p>© 2026 King Justine Dela Cruz</p>
+  </footer>
 
-  <form>
-    <input type="text" placeholder="Name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Message" required></textarea>
-    <button type="submit">SUBMIT</button>
-  </form>
-</section>
-
-<footer>
-  <p>© 2026 Tomasz Gajda</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
