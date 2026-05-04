@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 
-<!-- NAV -->
 <header class="nav">
   <div class="logo">TG</div>
+
   <ul>
-    <li>About</li>
-    <li>Skills</li>
-    <li>Portfolio</li>
-    <li><button>CONTACT</button></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact" class="btn-outline">CONTACT</a></li>
   </ul>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-left">
-    <p>Hi, I am</p>
-    <h1>Tomasz Gajda</h1>
-    <span>Frontend Developer / UI Designer</span>
 
-    <div class="icons">
+  <div class="hero-left">
+    <p class="fade-up">Hi, I am</p>
+    <h1 class="fade-up delay-1">Tomasz Gajda</h1>
+    <span class="fade-up delay-2">Frontend Developer / UI Designer</span>
+
+    <div class="socials fade-up delay-3">
       <div>GH</div>
       <div>IN</div>
       <div>LI</div>
@@ -34,15 +40,16 @@
   </div>
 
   <div class="hero-right">
-    <img src="assets/profile.png" alt="profile">
+    <img src="assets/profile.png" class="fade-in"/>
   </div>
+
 </section>
 
 <!-- ABOUT -->
-<section class="about">
+<section id="about" class="about reveal">
   <h2>ABOUT ME</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  <p class="about-text">
+    Passionate developer focused on clean UI and performant web apps.
   </p>
 
   <div class="about-grid">
@@ -52,17 +59,17 @@
     </div>
     <div>
       <h3>DEVELOPMENT</h3>
-      <p>Frontend, web apps</p>
+      <p>Modern frontend apps</p>
     </div>
     <div>
       <h3>MAINTENANCE</h3>
-      <p>Updates & optimization</p>
+      <p>Optimization & scaling</p>
     </div>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section class="skills">
+<section id="skills" class="skills reveal">
   <h2>SKILLS</h2>
 
   <div class="skill-grid">
@@ -76,33 +83,33 @@
 </section>
 
 <!-- PORTFOLIO -->
-<section class="portfolio">
-  <h2>PORTFOLIO</h2>
+<section id="portfolio" class="portfolio">
+  <h2 class="reveal">PORTFOLIO</h2>
 
   <div class="gallery">
-    <img src="assets/proj1.jpg">
-    <img src="assets/proj2.jpg">
-    <img src="assets/proj1.jpg">
-    <img src="assets/proj2.jpg">
-    <img src="assets/proj1.jpg">
-    <img src="assets/proj2.jpg">
+    <div class="card"><img src="assets/p1.jpg"></div>
+    <div class="card"><img src="assets/p2.jpg"></div>
+    <div class="card"><img src="assets/p3.jpg"></div>
+    <div class="card"><img src="assets/p4.jpg"></div>
+    <div class="card"><img src="assets/p1.jpg"></div>
+    <div class="card"><img src="assets/p2.jpg"></div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact">
+<section id="contact" class="contact reveal">
   <h2>CONTACT</h2>
 
   <form>
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Message"></textarea>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message" required></textarea>
     <button type="submit">SUBMIT</button>
   </form>
 </section>
 
 <footer>
-  <p>© 2026 Your Name</p>
+  <p>© 2026 Tomasz Gajda</p>
 </footer>
 
 <script src="script.js"></script>
