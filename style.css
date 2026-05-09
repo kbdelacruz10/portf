@@ -239,3 +239,8 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.hero-right img {
+  width: 40vw;
+  max-width: 500px;
+}
