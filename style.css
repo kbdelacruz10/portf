@@ -63,9 +63,6 @@ body {
   justify-content: center;
 }
 
-.hero img {
-  height: 80%;
-}
 
 .hero h1 {
   font-size: 48px;
@@ -231,27 +228,28 @@ footer {
     width: 100%;
   }
 
-  .hero-right {
-    width: 100%;
-  }
-
   .gallery {
     grid-template-columns: 1fr;
   }
 }
 
+/* HERO */
 .hero {
+  display: flex;
+  height: 100vh;
   overflow: hidden;
-  padding-bottom: 0;
 }
 
 .hero-right {
+  width: 45%;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end; /* pushes image downward */
+  justify-content: center;
 }
 
 .hero-right img {
-  width: 420px;       /* adjust size */
+  width: 500px;      /* increase size */
+  max-width: none;
   display: block;
-  margin-bottom: -20px; /* pushes image into next section */
+  margin-bottom: -40px; /* overlaps into next section */
 }
