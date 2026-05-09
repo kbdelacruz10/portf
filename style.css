@@ -240,3 +240,18 @@ footer {
   }
 }
 
+.hero {
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.hero-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-right img {
+  width: 420px;       /* adjust size */
+  display: block;
+  margin-bottom: -20px; /* pushes image into next section */
+}
