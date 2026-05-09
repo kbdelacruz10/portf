@@ -129,10 +129,20 @@ body {
 }
 
 .hero-right img {
-  width: 520px;
+  width: 680px;
   max-width: none;
+
   display: block;
-  margin-bottom: -40px;
+
+  margin-bottom: -60px;
+
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.35));
+
+  transition: transform 0.5s ease;
+}
+
+.hero-right img:hover {
+  transform: scale(1.03);
 }
 
 /* =========================
