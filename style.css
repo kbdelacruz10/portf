@@ -225,7 +225,7 @@ body {
   border-radius: 20px;
 
   transition: 0.35s ease;
-  cursor: pointer;
+  cursor: default;
 }
 
 .skill-grid div:hover {
@@ -497,3 +497,4 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
